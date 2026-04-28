@@ -1,0 +1,90 @@
+:root {
+    --primary: #1e40af;
+    --accent: #3b82f6;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #f1f5f9;
+    color: var(--dark);
+    scroll-behavior: smooth;
+}
+
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+.nav-content { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-links a { text-decoration: none; color: var(--dark); font-weight: 500; }
+
+/* Hero */
+.hero {
+    padding: 140px 0 60px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    text-align: center;
+}
+
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+/* Info Sections */
+.info-section { margin: 60px 0; }
+.section-title { margin-bottom: 30px; text-align: center; }
+
+.card, .contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.skill-card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+.skill-card:hover { transform: translateY(-5px); }
+.skill-card i { font-size: 2rem; color: var(--accent); margin-bottom: 15px; }
+
+/* Formulario */
+.input-group { margin-bottom: 15px; display: flex; flex-direction: column; }
+.input-group input, .input-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+.btn-send {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+footer { text-align: center; padding: 40px; color: #64748b; }

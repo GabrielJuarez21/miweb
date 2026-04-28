@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Informativo | Carlos Gabriel Juarez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <span class="logo">CG<b>J</b></span>
+            <ul class="nav-links">
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Explorando el Desarrollo & la Auditoría</h1>
+            <p>Estudiante de Ingeniería apasionado por el ecosistema Angular y el Gobierno de TI.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="perfil" class="info-section">
+            <div class="section-title">
+                <h2><i class="fas fa-user-graduate"></i> Trayectoria Académica</h2>
+            </div>
+            <div class="card">
+                <h3>Ingeniería de Sistemas e Informática</h3>
+                <p><strong>Universidad Tecnológica del Perú (UTP)</strong> | Piura, Perú</p>
+                <p>Enfoque en auditoría de sistemas, COBIT 5 y metodologías de procesamiento de datos.</p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <div class="section-title">
+                <h2><i class="fas fa-tools"></i> Stack Tecnológico</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-angular"></i>
+                    <h4>Frontend</h4>
+                    <p>Angular, TypeScript, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h4>Backend & Cloud</h4>
+                    <p>Firebase, Firebase Auth, Firestore</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>TI & Gestión</h4>
+                    <p>Auditoría de Sistemas, Procesos ETL/ELT</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="info-section">
+            <div class="section-title">
+                <h2><i class="fas fa-paper-plane"></i> Enviar un mensaje</h2>
+            </div>
+            <form id="contact-form" action="https://formspree.io/f/tu_id_aqui" method="POST" class="contact-card">
+                <div class="input-group">
+                    <label>Nombre</label>
+                    <input type="text" name="name" required placeholder="Tu nombre">
+                </div>
+                <div class="input-group">
+                    <label>Correo</label>
+                    <input type="email" name="email" required placeholder="tu@correo.com">
+                </div>
+                <div class="input-group">
+                    <label>Mensaje</label>
+                    <textarea name="message" rows="4" required placeholder="¿En qué puedo ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="btn-send">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Actualizado en 2026 | Piura, Perú</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
